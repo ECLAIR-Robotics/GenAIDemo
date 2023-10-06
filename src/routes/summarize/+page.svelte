@@ -16,7 +16,7 @@
   }
 
   article {
-    @apply text-center
+    @apply text-center w-full
   }
 
   p {
@@ -24,16 +24,16 @@
   }
 
   textarea {
-    @apply w-1/2 h-48 p-4 rounded-l border-2 border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-black dark:text-white;
+    @apply w-1/2 h-48 p-4 rounded border-2 border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-black dark:text-white focus:border-black/20 focus:dark:border-white/20 focus:outline-none;
   }
 
   button {
-    @apply bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 text-black dark:text-white font-bold p-8 rounded-2xl;
+    @apply bg-black/5 hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 text-black dark:text-white font-bold p-8 rounded;
   }
 </style>
 
 <div class="w-full p-6 flex flex-col justify-center items-center space-y-6">
-	<h1>Summarize your long-form document!</h1>
+	<h1>Summarize your document!</h1>
 	<form
 		action="?/summarize"
 		method="post"

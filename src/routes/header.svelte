@@ -5,6 +5,7 @@
     { name: "Home", url: "/" },
     { name: "Summarize Text Document", url: "/summarize" },
     { name: "Text Document Chat", url: "/documentchat" },
+    { name: "Generate Profile", url: "/generateprofile" },
   ];
 </script>
 

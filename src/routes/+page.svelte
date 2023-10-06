@@ -7,6 +7,7 @@
     { name: "Anthropic API", url: "https://docs.anthropic.com/claude/reference/getting-started-with-the-api" },
     { name: "What is Retrieval-Augmented Generation?", url: "https://www.youtube.com/watch?v=T-D1OfcDW1M" },
     { name: "The Illustrated Transformer", url: "http://jalammar.github.io/illustrated-transformer/" },
+    { name: "LLM Powered Autonomous Agents", url: "https://lilianweng.github.io/posts/2023-06-23-agent/" },
   ];
 </script>
 
