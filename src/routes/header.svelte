@@ -6,6 +6,7 @@
     { name: "Summarize Text Document", url: "/summarize" },
     { name: "Text Document Chat", url: "/documentchat" },
     { name: "Generate Profile", url: "/generateprofile" },
+    { name: "Tic Tac Toe", url: "/tictactoe" },
   ];
 </script>
 
