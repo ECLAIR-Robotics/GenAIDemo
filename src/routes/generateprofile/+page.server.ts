@@ -6,15 +6,6 @@ import { OPENAI_API_KEY } from '$env/static/private';
 
 export const actions = {
   generate: async ({ request }: { request: Request }): Promise<Actions> => {
-    return { profile: {
-      displayName: 'Ocean Lover',
-      avatarImageUrl: 'https://oaidalleapiprodscus.blob.core.windows.net/private/org-7RjbIg1yIno2jYWlvj1nSKXD/user-X5jqXYgOmhyWPtWXGJlbXXsO/img-xuO5I3Ym5BaXGCsfXn1MwvNJ.png?st=2023-10-06T21%3A44%3A10Z&se=2023-10-06T23%3A44%3A10Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-10-06T02%3A30%3A27Z&ske=2023-10-07T02%3A30%3A27Z&sks=b&skv=2021-08-06&sig=QqjUv7AVYbFsYoA6rteIm9WzJkthfORnkzuH%2B%2Bd7Wfw%3D',
-      bio: 'Exploring the depths of the ocean and embracing the beauty of marine life 🌊🐠🐬 Dive in and join me on this aquatic adventure! 🐙🦈',
-      bannerImageUrl: 'https://oaidalleapiprodscus.blob.core.windows.net/private/org-7RjbIg1yIno2jYWlvj1nSKXD/user-X5jqXYgOmhyWPtWXGJlbXXsO/img-Os8OudOBMrXmhslcaXxPVMax.png?st=2023-10-06T21%3A44%3A11Z&se=2023-10-06T23%3A44%3A11Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-10-06T02%3A45%3A26Z&ske=2023-10-07T02%3A45%3A26Z&sks=b&skv=2021-08-06&sig=NpKKSm1jPn9hMf9/YyesdqTtxpWNzoSPWbAaJ5FYT00%3D',
-      primaryColor: { r: 0, g: 119, b: 190 },
-      secondaryColor: { r: 247, g: 192, b: 45 }
-    }};
-
     // Initialize the connection to OpenAI
     const openai = new OpenAI({
       apiKey: OPENAI_API_KEY,

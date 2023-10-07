@@ -71,7 +71,7 @@
       <div class="w-full flex flex-col justify-center items-center mt-4">
         <div class="w-1/4 rounded-xl p-1" style="background: linear-gradient({primaryColor}, {secondaryColor});">
           <div class="w-full flex flex-col justify-center items-center pb-4 rounded-xl" style="background: {backgroundColor};">
-            <div class="w-full h-32 relative overflow-hidden rounded-t-lg">
+            <div class="w-full h-32 relative overflow-clip rounded-t-lg">
               <img alt="banner" src={profile.bannerImageUrl} class="w-full h-full object-cover object-center" />
             </div>
             <div class="flex flex-row items-center w-full h-16 ml-20 mt-[-1em] mb-2 z-10 space-x-4">
