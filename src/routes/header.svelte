@@ -7,6 +7,7 @@
     { name: "Text Document Chat", url: "/documentchat" },
     { name: "Generate Profile", url: "/generateprofile" },
     { name: "Tic Tac Toe", url: "/tictactoe" },
+    // { name: "Human Sim", url: "/sim" },
   ];
 </script>
 
@@ -24,9 +25,10 @@
         <button on:click={() => goto(page.url)}>{page.name}</button>
       {/each}
     </div>
-    <h2 class="text-xl font-bold text-black dark:text-white">
+    <!-- hehe this was eclair code originally 🤫 -->
+    <!-- <h2 class="text-xl font-bold text-black dark:text-white">
       <span class="inline bg-gradient-to-r from-indigo-500 to-fuchsia-500 bg-clip-text text-transparent">ECLAIR</span>
       2023
-    </h2>
+    </h2> -->
   </div>
 </div>

@@ -29,7 +29,7 @@ export const actions = {
     for (let i = 0; i < 3; i++) {
       for (let j = 0; j < 3; j++) {
         if (boardArray[i][j] === '_') {
-          validMoves.push(`${i},${j}`);
+          validMoves.push(`${j},${i}`);
         }
       }
     }
@@ -52,7 +52,7 @@ export const actions = {
             properties: {
               position: {
                 type: 'string',
-                description: 'The position to play, represented by integers y,x. y represents the y position starting from top and x represents the x position starting from left. Only play valid moves.',
+                description: 'The position to play, represented by integers x,y. x represents the x position starting from left and y represents the y position starting from top. Only play valid moves.',
                 enum: validMoves,
               },
             },
@@ -61,7 +61,7 @@ export const actions = {
         }
       ],
       function_call: { name: 'play_move' },
-      model: 'gpt-3.5-turbo-0613',
+      model: 'gpt-4-0613',
     });
 
     if (chatCompletion.choices[0].message.function_call === undefined) {
@@ -70,12 +70,12 @@ export const actions = {
 
     const functionCall: { name: string, arguments: string } = chatCompletion.choices[0].message.function_call;
     const calledArguments = JSON.parse(functionCall.arguments);
-    let y, x;
+    let x, y;
     if (validMoves.includes(calledArguments.position)) {
-      [y, x] = calledArguments.position.split(',').map(s => parseInt(s)) as [number, number];
+      [x, y] = calledArguments.position.split(',').map(s => parseInt(s)) as [number, number];
     } else {  // Pick a random move if GPT did not pick a valid one
       console.log(`GPT did not pick a valid move: ${calledArguments.position}`);
-      [y, x] = validMoves[Math.floor(Math.random() * validMoves.length)].split(',').map(s => parseInt(s)) as [number, number];
+      [x, y] = validMoves[Math.floor(Math.random() * validMoves.length)].split(',').map(s => parseInt(s)) as [number, number];
     }
 
     return { x, y };
