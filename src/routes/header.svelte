@@ -27,7 +27,7 @@
     </div>
     <h2 class="text-xl font-bold text-black dark:text-white">
       <span class="inline bg-gradient-to-r from-indigo-500 to-fuchsia-500 bg-clip-text text-transparent">ECLAIR</span>
-      2023
+      2024
     </h2>
   </div>
 </div>
